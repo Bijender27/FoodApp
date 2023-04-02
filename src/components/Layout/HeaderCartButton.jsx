@@ -1,10 +1,10 @@
 import React from 'react'
-import CartIcon from './CartIcon'
+import CartIcon from '../Cart/CartIcon'
 import classes from './HeaderCartButton.module.css'
 
-function HeaderCartButton() {
+function HeaderCartButton(props) {
   return (
-    <button className={classes.button}>
+    <button className={classes.button} onClick={()=>{props.modalOpen()}}>
       <span className={classes.icon}>
         <CartIcon />
       </span>
